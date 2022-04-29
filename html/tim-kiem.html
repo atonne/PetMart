@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tìm kiếm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid py-3" style="background-color: #ebf4f4;">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html">
+                        <img width="80px" class="ml-4" src="../img/Logo-Petmart.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="pr-5 col-6 d-flex align-items-center justify-content-end">
+                    <div id="daDangNhap" class="flex-column">
+                        <div class="d-flex flex-row mb-3">
+                            <a href="tai-khoan.html">
+                                <button type="button" id="btnTaiKhoan"
+                                    class="btn-black d-block btn btn-dark mr-2 px-2">Tài
+                                    khoản</button>
+                            </a>
+                            <button type="button" id="btnDangXuat" class="btn-black btn btn-dark px-2">Đăng
+                                xuất</button>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <a href="gio-hang.html">
+                                <button id="btnGioHang" class="btn btn-warning">
+                                    <i class="ti-shopping-cart mr-2" style="font-size: 20px;"
+                                        aria-hidden="true"></i><span class="badge badge-success">0</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="chuaDangNhap" class="">
+                        <!-- Button trigger modal Dang nhap -->
+                        <button type="button" class="btn-black btn btn-dark mr-2 px-2" data-toggle="modal"
+                            data-target="#modalDangNhap">
+                            Đăng nhập
+                        </button>
+
+                        <!-- Button trigger modal Dang ky -->
+                        <button type="button" class="btn-black btn btn-dark px-2" data-toggle="modal"
+                            data-target="#modalDangKy">
+                            Đăng ký
+                        </button>
+                    </div>
+
+                    <!-- Modal Dang nhap -->
+                    <div class="modal fade" id="modalDangNhap" tabindex="-1" role="dialog"
+                        aria-labelledby="modalDangNhap" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title ml-3">Đăng nhập</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <!-- Form dang nhap -->
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtEmailDN">Email:</label>
+                                                    <input type="email" class="form-control" name="txtEmailDN"
+                                                        id="txtEmailDN" placeholder="" required>
+                                                    <p id="tbEmailDN" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtMatKhauDN">Mật khẩu:</label>
+                                                    <input type="password" class="form-control" name="txtMatKhauDN"
+                                                        id="txtMatKhauDN" placeholder="" required>
+                                                    <p id="tbMatKhauDN" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form dang nhap -->
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy bỏ</button>
+                                    <button type="button" id="btnXacNhanDN" class="btn btn-success">Xác nhận</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End modal dang nhap -->
+                    <!-- Modal Dang ky -->
+                    <div class="modal fade" id="modalDangKy" tabindex="-1" role="dialog" aria-labelledby="modalDangKy"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title ml-3">Đăng ký</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <!-- Form dang ky -->
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtTen">Tên:</label>
+                                                    <input type="text" name="txtTen" id="txtTen" class="form-control"
+                                                        placeholder="" required>
+                                                    <p id="tbTen" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtEmail">Email:</label>
+                                                    <input type="email" class="form-control" name="txtEmail"
+                                                        id="txtEmail" placeholder="" required>
+                                                    <p id="tbEmail" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtMatKhau">Mật khẩu:</label>
+                                                    <input type="password" class="form-control" name="txtMatKhau"
+                                                        id="txtMatKhau" placeholder="" required>
+                                                    <p id="tbMatKhau" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-1">
+                                                    <label for="txtNgaySinh">Ngày sinh:</label>
+                                                    <input type="date" class="form-control" name="txtNgaySinh"
+                                                        id="txtNgaySinh" placeholder="" required>
+                                                    <p id="tbNgaySinh" class="text-danger"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mt-4">
+                                            <div class="col-12">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="chkDongY"
+                                                        name="chkDongY" required>
+                                                    <label class="custom-control-label" for="chkDongY">Đồng ý với chính
+                                                        sách và điều khoản dịch vụ.</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End form dang ky -->
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy bỏ</button>
+                                    <button type="button" id="btnXacNhanDK" class="btn btn-success">Xác
+                                        nhận</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal dang ky -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="navbar">
+        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <div class="btn-group">
+                        <a href="thu-cung.html" class="nav-link pr-0">Thú cưng</a>
+                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="thu-cung.html?loai=cho">Chó cảnh</a>
+                            <a class="dropdown-item" href="thu-cung.html?loai=meo">Mèo cảnh</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="phu-kien.html">Phụ kiện</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="ho-tro.html">Hỗ trợ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="site-map.html">Sitemap</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="txtTimKiem" class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button id="btnTimKiem" class="btn btn-outline-success my-2 my-sm-0" type="button">Tìm kiếm</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <div class="container-fluid my-2 bg-opaque">
+            <div class="row">
+                <div class="col">
+                    <nav class="breadcrumb pl-0 pb-0" style="background-color: rgba(0, 0, 0, 0);"
+                        aria-label="breadcrumb">
+                        <a class="breadcrumb-item text-dark" href="index.html">Trang chủ</a>
+                        <span class="breadcrumb-item active">Tìm kiếm</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-2 bg-opaque">
+            <div class="row pt-3 justify-content-end">
+                <div class="col-6 col-md-3">
+                    <select class="form-control" name="" id="sapXep">
+                        <option>Sắp xếp</option>
+                        <option>Giá tăng dần</option>
+                        <option>Giá giảm dần</option>
+                    </select>
+                </div>
+            </div>
+            <div id="listsanpham" class="row pt-3 d-flex justify-content-center"></div>
+        </div>
+    </main>
+
+    <div class="container-fluid pt-3">
+        <div class="row">
+            <div class="col-12 px-0">
+                <img class="img-fluid" src="../img/banner-footer.PNG" alt="logo-footer">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark text-white">
+            <div class="row pt-3 border-bottom">
+                <div class="col-12">
+                    <p>Tại đây, chúng tôi cung cấp cho bạn người bạn đồng hành tốt nhất cũng như dịch vụ chăm sóc cho
+                        người bạn của bạn.</p>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-12">
+                    <p class="mb-0" style="font-size: 15px;"><span style="color: red;">Điện thoại:</span> 0777618759</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p style="font-size: 15px;"><span style="color: red;">Địa chỉ:</span> 53 Thống Nhất P11 Gò Vấp
+                        Tp.HCM</p>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-2">
+                    <p><em>Design by Thanh Toàn</em></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/tim-kiem.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

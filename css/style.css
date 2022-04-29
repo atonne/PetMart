@@ -1,0 +1,25 @@
+.bg-opaque {
+    background-color: rgba(196, 196, 196, .08);
+}
+
+/* .btn-black {
+    width: 104px;
+    background-color: #232B2B;
+} */
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.card {
+    border-radius: 0;
+}

@@ -1,0 +1,183 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.a-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.j-spacebetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  background-color: #ff641e;
+  color: white;
+}
+
+header h2 {
+  font-size: 26px;
+  padding: 10px 0px;
+}
+
+.contact {
+  padding-top: 40px;
+}
+
+.contact .heading {
+  font-size: 26px;
+}
+
+.contact .description {
+  color: #333333;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.contact .feedback {
+  padding: 0 80px;
+  margin: 40px 0;
+}
+
+.contact .feedback .row h3 {
+  margin: 20px 0;
+}
+
+.contact .feedback .row ul li a {
+  display: block;
+  padding: 12px 25px;
+  border: 1px solid #ff641e;
+  border-radius: 10px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact .feedback .row ul li a i {
+  color: #ff641e;
+  padding-right: 10px;
+}
+
+.contact .feedback .row form {
+  width: 750px;
+  margin: 0 auto;
+  background: #f6f6f6;
+  border-radius: 8px;
+  padding: 32px 40px;
+}
+
+.contact .feedback .row form .btn {
+  padding: 12px 40px;
+  background: #ff641e;
+  color: white;
+  border-radius: 7px;
+}
+
+.contact .feedback .row form .btn:hover {
+  opacity: 0.8;
+}
+
+.contact .feedback .row form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .feedback .row form .form-group p {
+  color: red;
+  font-style: italic;
+}
+
+.contact .feedback .row form .form-group label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact .feedback .row form .form-group .text {
+  height: 50px;
+}
+
+.contact .feedback .row form .form-group .text, .contact .feedback .row form .form-group textarea {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact .feedback .row form .form-group .input-group {
+  margin-top: 20px;
+  color: #333333;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contact .feedback .row form .form-group .input-group label {
+  cursor: pointer;
+  display: block;
+  padding: 12px 25px 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  padding-left: 30px;
+  position: relative;
+  color: #333333;
+  font-size: 14px;
+}
+
+.contact .feedback .row form .form-group .input-group label:hover {
+  border: 1px solid #ff641e;
+  cursor: pointer;
+}
+
+.contact .feedback .row form .form-group .input-group label::before {
+  display: block;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid red;
+  position: absolute;
+  border-radius: 50%;
+  top: 13px;
+  left: 6px;
+}
+
+.contact .feedback .row form .form-group .input-group label::after {
+  display: none;
+  content: "";
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #ff641e;
+  top: 15px;
+  left: 8px;
+  position: absolute;
+}
+
+.contact .feedback .row form .form-group .input-group input {
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.contact .feedback .row form .form-group .input-group input:checked ~ label {
+  color: #ff641e;
+  border: 1px solid #ff641e;
+}
+
+.contact .feedback .row form .form-group .input-group input:checked ~ label::after {
+  display: block;
+}
+/*# sourceMappingURL=contact.css.map */
